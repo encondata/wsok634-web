@@ -5,14 +5,14 @@
 # the container. Run from a checkout of this repo, or anywhere — it will clone
 # the repo if it isn't already in one.
 #
-# Usage:  ./install.sh                 # serve on port 80
+# Usage:  ./install.sh                 # serve on port 8675
 #         PORT=8080 ./install.sh       # serve on another port
 set -eu
 
 REPO_URL="${REPO_URL:-https://github.com/encondata/wsok634-web.git}"
 IMAGE="${IMAGE:-wsok634-web}"
 CONTAINER="${CONTAINER:-wsok634-web}"
-PORT="${PORT:-80}"
+PORT="${PORT:-8675}"
 BASE_IMAGE="alpine:3.20"
 
 command -v docker >/dev/null 2>&1 || { echo "docker is not installed" >&2; exit 1; }

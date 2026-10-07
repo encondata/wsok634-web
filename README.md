@@ -5,7 +5,7 @@ Static site for WSOK634.net — `index.html`, `style.css`, and `assets/`. No bui
 ## Deploy with Docker
 
 ```sh
-./install.sh              # pulls alpine, builds the image, runs it on port 80
+./install.sh              # pulls alpine, builds the image, runs it on port 8675
 PORT=8080 ./install.sh    # use a different host port
 ```
 
