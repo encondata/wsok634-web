@@ -5,12 +5,15 @@ Static site for WSOK634.net — `index.html`, `style.css`, and `assets/`. No bui
 ## Deploy with Docker
 
 ```sh
-./install.sh              # pulls alpine, builds the image, runs it on port 8675
-PORT=8080 ./install.sh    # use a different host port
+curl -fsSL https://raw.githubusercontent.com/encondata/wsok634-web/main/install.sh | sh
 ```
 
-On a fresh server without a checkout, the script clones this repo to `~/wsok634-web`
-first (override with `INSTALL_DIR`). Re-run it any time to pull changes and redeploy.
+The script asks where to install the site code (default `/mnt/user/wsok634_web`),
+clones or updates the repo there, pulls `alpine:3.20`, builds the image, and runs it
+on port 8675. Re-run it any time to pull changes and redeploy.
+
+- `INSTALL_DIR=/some/path` skips the prompt
+- `PORT=8080` serves on a different host port
 
 The image is `alpine:3.20` + nginx serving the files from `/var/www/wsok634`.
 The container restarts automatically (`--restart unless-stopped`).
