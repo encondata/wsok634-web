@@ -1,0 +1,7 @@
+.git
+.gitignore
+.dockerignore
+install.sh
+README*
+*.md
+.DS_Store

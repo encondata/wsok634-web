@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WSOK634 — personal GMRS radio station, QSL information, radio adventures and exploration." />
+  <meta name="theme-color" content="#061a3a" />
+  <title>WSOK634 | GMRS Radio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="WSOK634 home">
+      <img src="assets/wsok634-logo.png" alt="WSOK634 radio tower sunset logo" />
+      <span>WSOK634</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#radio">Radio</a>
+      <a href="#qsl">QSL</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell hero-panel">
+      <div class="hero-copy">
+        <div class="eyebrow">GMRS • NORTH TEXAS</div>
+        <h1>Radio.<br><span>Adventure.</span><br>Exploration.</h1>
+        <p class="hero-lede">Welcome to <strong>WSOK634.net</strong> — my corner of the airwaves for GMRS, radio projects, road trips, and the places a good signal can take you.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#qsl">QSL Information</a>
+          <a class="button secondary" href="#about">About WSOK634</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="WSOK634 logo">
+        <img src="assets/wsok634-logo.png" alt="WSOK634 logo" />
+      </div>
+    </section>
+
+    <section class="quick-grid section-shell" aria-label="Station overview">
+      <article class="stat-card">
+        <span class="stat-label">CALL SIGN</span>
+        <strong>WSOK634</strong>
+        <p>Personal GMRS station</p>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">REGION</span>
+        <strong>North Texas</strong>
+        <p>Local and travel operation</p>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">ON THE AIR</span>
+        <strong>GMRS</strong>
+        <p>Simplex • Repeaters • Mobile</p>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">QSL</span>
+        <strong>Cards Welcome</strong>
+        <p>Radio contacts &amp; adventures</p>
+      </article>
+    </section>
+
+    <section id="about" class="about section-shell split-section">
+      <div>
+        <div class="eyebrow">ABOUT THE STATION</div>
+        <h2>More than a call sign.</h2>
+      </div>
+      <div class="body-copy">
+        <p>WSOK634 is a personal GMRS station built around practical communications, experimentation, and getting outside. The goal is simple: make useful contacts, learn something new, and have fun doing it.</p>
+        <p>This site is a home for station information, QSL details, radio projects, and notes from trips where the radios come along for the ride.</p>
+      </div>
+    </section>
+
+    <section id="radio" class="radio-section section-shell">
+      <div class="section-heading">
+        <div class="eyebrow">THE RADIO SIDE</div>
+        <h2>Built for the road and the airwaves.</h2>
+        <p>From handhelds to mobile installs and repeaters, the fun is in making the whole system work well together.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">01</div>
+          <h3>Mobile</h3>
+          <p>Vehicle-based GMRS for local communication, road trips, and exploring beyond familiar coverage.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">02</div>
+          <h3>Repeaters</h3>
+          <p>Using and learning regional repeater systems while keeping a strong focus on good operating practice.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">03</div>
+          <h3>Projects</h3>
+          <p>Antennas, programming, radio interfaces, code plugs, and the occasional experiment that starts with “what if?”</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="qsl" class="qsl section-shell">
+      <div class="qsl-copy">
+        <div class="eyebrow">QSL / CONTACT CONFIRMATION</div>
+        <h2>Use the card we designed.</h2>
+        <p>If we made contact on GMRS, a QSL card is always welcome. Include your call sign, date, approximate time, channel or repeater, location, and signal report.</p>
+        <div class="qsl-fields">
+          <span>Call Sign</span><span>Date / Time</span><span>Channel</span><span>Location</span><span>Signal Report</span>
+        </div>
+        <p class="fine-print">This section now uses your actual custom QSL card design instead of a generic placeholder. Mailing details can be exchanged privately.</p>
+      </div>
+      <div class="qsl-card-preview qsl-card-image">
+        <img src="assets/qsl-card-front.png" alt="Custom WSOK634 QSL card design" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-shell">
+      <div>
+        <div class="eyebrow">73 FROM WSOK634</div>
+        <h2>See you on the air.</h2>
+      </div>
+      <p>WSOK634.net is a personal, non-commercial GMRS site. Check back for station updates, radio projects, QSL information, and trip notes.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner section-shell">
+      <div class="footer-brand">WSOK634</div>
+      <div>Radio • Adventure • Exploration</div>
+      <div>© <span id="year">2026</span> WSOK634.net</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
